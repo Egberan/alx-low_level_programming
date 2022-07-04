@@ -1,14 +1,22 @@
-#include <stdio.h>
+#include<stdio.h>
+
 /**
-* main - prints the size of various types
-* Return: 0 if exited properly, non-zero otherwise
+* main- prints all the numbers of base 16 in lowercase, followed by a new line.
+*
+* Return: Always (Success)
 */
 int main(void)
 {
-printf("Size of a char: %d byte(s)\n", sizeof(char));
-printf("Size of an int: %d byte(s)\n", sizeof(int));
-printf("Size of a long int: %d byte(s)\n", sizeof(long int));
-printf("Size of a long long int: %d byte(s)\n", sizeof(long long int));
-printf("Size of a float: %d byte(s)\n", sizeof(float));
-return (0);
+char c
+for (c = '0' c < = '9'; c++
+{
+putchar(c)
 }
+for (c = 'a'; c < = ‘f'; c++
+{
+putchar(c)
+}
+putchar('/n');
+return (0)
+}
+
