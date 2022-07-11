@@ -1,7 +1,0 @@
-#include <stdio.h>
-/**
-* main - casuses an infinite loop
-* Return: 0
-*/
-int main(void)
- 
