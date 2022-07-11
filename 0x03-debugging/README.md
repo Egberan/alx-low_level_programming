@@ -1,3 +1,4 @@
-This is my debugging README.md file
+#!/bin/bash
+We are learning C programing
 
  
