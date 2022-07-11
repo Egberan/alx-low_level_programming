@@ -1,7 +1,8 @@
 #include "main.h"
+
 /**
 * main -test function that prints if integee us positive or negative
-* * Return: 0
+* Return: 0
 */
 int main(void)
 {
