@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 #include <stdio.h>
 /**
 * _strstr -  a function that locates a substring.
