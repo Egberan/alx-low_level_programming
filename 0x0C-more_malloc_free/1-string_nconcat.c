@@ -1,11 +1,12 @@
 #include "main.h"
-#include <stdlib.h>
+int _strlen(char *s);
 /**
-* string_nconcat - A function that concatenates two strings
-* @s1: An input pointer of the first string
-* @s2: An input pointer of the second string
-* @n: an input integer of number of string to concatenate
-* Return: Apointer to concatened strings or NULL if it str is NULL
+* string_nconcat - concatenates two strings.
+* @s1: first string
+* @s2: second string
+* @n: number of bytes to concat
+*
+* Return: pointer to a newly allocated space in memory
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
