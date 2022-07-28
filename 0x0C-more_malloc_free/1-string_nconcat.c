@@ -9,27 +9,35 @@
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-char *new_str;
-unsigned int i = 0, lens1 = 0, lens2 = 0;
+char *p;
+unsigned int len, i, c;
 if (s1 == NULL)
 s1 = "";
-while (s1[lens1])
-lens1++;
 if (s2 == NULL)
 s2 = "";
-while (s2[lens2])
-lens2++;
-if (n >= lens2)
-n = lens2;
-new_str = malloc(lens1 + n + 1);
-if (new_str == NULL)
+len = (unsigned int)_strlen(s1);
+p = malloc((len + n + 1) * sizeof(char));
+if (p == NULL)
 return (NULL);
-for (; i < (lens1 + n); i++)
+for (i = 0, c = 0; i < (len + n); i++)
 {
-if (i < lens1)
-new_str[i] = *s1, s1++;
-elsenew_str[i] = *s2, s2++;
+if (i < len)
+p[i] = s1[i];
+else
+p[i] = s2[c++];
 }
-new_str[i] = '\0';
-return (new_str);
+p[i] = '\0';
+return (p);
+}
+/**
+* _strlen - gets the length of a string
+* @s: the string
+* Return: length of string
+*/
+int _strlen(char *s)
+{
+int i;
+for (i = 0; s[i] != '\0'; i++)
+;
+return (i);
 }
