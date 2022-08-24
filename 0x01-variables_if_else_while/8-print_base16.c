@@ -1,6 +1,9 @@
 #include<stdio.h>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 91a2079830ae7a5730418363f3dc9abd7544463e
 /**
 * main- prints hexadecimal string
 *
@@ -21,4 +24,7 @@ putchar('\n');
 return (0);
 }
 
+<<<<<<< HEAD
 h
+=======
+>>>>>>> 91a2079830ae7a5730418363f3dc9abd7544463e
